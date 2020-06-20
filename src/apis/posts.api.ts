@@ -12,7 +12,7 @@ export type Post = {
   }
 }
 
-const BaseUrl = 'http://localhost:3000';
+const BaseUrl = 'http://localhost:300';
 
 export const getPosts = async () => {
   const { data: posts } = await axios.get<[Post]>(`${BaseUrl}/feed?_expand=author`);
